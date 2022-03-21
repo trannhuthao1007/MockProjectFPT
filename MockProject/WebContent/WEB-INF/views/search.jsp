@@ -16,7 +16,7 @@
 		<input type="text" name="keyword"/>
 		<input type="submit" value="Search" />
 	</form>
-    <h2>Search Result</h2>
+    <h2 ><a href = "back">Search Result</a></h2>
     <table border="1" cellpadding="5">
         <tr>
             <th>ID</th>

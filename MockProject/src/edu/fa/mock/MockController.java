@@ -35,6 +35,8 @@ public class MockController {
 	    return "new_product";
 	}
 	
+	
+	
 	@RequestMapping(value= "back")
 	public String backHome(Map<String, Object> model) {
 	    Product product = new Product();
@@ -42,11 +44,12 @@ public class MockController {
 	    return "redirect:/";
 	}
 	
-	/*
-	 * @RequestMapping(value= "update", method = RequestMethod.POST) public String
-	 * UpdateProduct(@ModelAttribute("product") Product product) {
-	 * service.save(product); return "new_product"; }
-	 */
+	
+	  @RequestMapping(value= "update", method = RequestMethod.POST) public String
+	  UpdateProduct(@ModelAttribute("product") Product product) {
+	  service.save(product);
+	  return "new_product"; }
+	 
 	
 	@RequestMapping(value= "/save", method = RequestMethod.POST)
 	public String saveProduct(@ModelAttribute("product") Product product) {

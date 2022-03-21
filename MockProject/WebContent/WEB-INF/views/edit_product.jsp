@@ -45,7 +45,7 @@
                 </tr>    
                 <tr >
                     <td Onclick="return Confirm();" colspan="2"><input type="submit" value="Save"></td>
-                    <td><a href="back">BACK</a></td>
+                    <td><a href="back">Back</a></td>
                 </tr>                    
             </table>
         </form:form>
