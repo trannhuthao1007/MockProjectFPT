@@ -7,9 +7,39 @@
 <meta charset="ISO-8859-1">
 <title>Product Manager</title>
 </head>
-<body>
 
 <style>
+
+	.shop{
+	background-color: yellow;
+			width: 100%;
+			height: 58px;
+	}
+		.shop_header{
+			font-size: 42px;
+			color:#141823;
+			text-indent: 14px;
+			 
+			}
+			
+			.oder_header{
+			font-size: 20px;
+			text-align: right;
+			 margin-top: -17px;
+			 margin-right: 20px;
+			}
+			
+			.product_body{
+			margin-top: 50px; 
+			
+			}
+			
+
+		.table{
+			width:70%;
+					
+		}
+
 		td {
 			width: 70px;
 			height: 25px;
@@ -28,6 +58,7 @@
 	
 	.titlerow {
 		background-color: yellow;
+		
 	}
 </style>
 <script>
@@ -42,8 +73,17 @@
 </script> 
 
 
-<div align="center">
-	<h1>Product</h1>
+<body>
+<div class="shop" >
+
+		 <h1 class="shop_header" >Shop</h1>
+	<h2 class= "oder_header"> <a href= "order_list">Order list </a></h2>
+
+</div>
+
+
+<div align="center" class="product_body">
+	<h2>Product</h2>
 	<form  method="get" action="search">
 		<input class="searchtext" type="text" name="keyword"/>
 		<div>
@@ -52,7 +92,7 @@
 	</form>
 	<h3><a href="new">Add</a></h3>
 	
-	<table border="1" padding="5" >
+	<table border="1" padding="5" class="table">
 		<tr class="titlerow">
 			<th>ID</th>
 			<th>Code</th>

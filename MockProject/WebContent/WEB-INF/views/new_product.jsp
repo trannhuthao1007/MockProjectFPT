@@ -7,7 +7,34 @@
 <meta charset="ISO-8859-1">
 <title>New Product</title>
 </head>
+	
+	<style>
+		.shop{
+	background-color: yellow;
+			width: 100%;
+			height: 58px;
+	}
+		.shop_header{
+			font-size: 42px;
+			color:#141823;
+			text-indent: 14px;
+			 
+			}
+			
+			
+	</style>
+	
+	
 <body>
+
+<div class="shop" >
+
+		 <h1 class="shop_header" >Shop</h1>
+	
+
+</div>
+
+
 	<div align="center">
 	<h2><a href ="back">Manager Product</a></h2>
 	<form:form action="update" method="post" modelAttribute="product">
